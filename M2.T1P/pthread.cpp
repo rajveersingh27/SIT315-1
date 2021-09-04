@@ -2,6 +2,7 @@
 #include <time.h>
 #include <chrono>
 #include <cstdlib>
+#include <pthread>
 
 using namespace std::chrono;
 using namespace std;
