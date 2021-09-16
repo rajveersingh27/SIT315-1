@@ -6,7 +6,7 @@
 using namespace std::chrono;
 using namespace std;
 
-const int SIZE = 300;
+const int SIZE = 500;
 int **matricesOne, **matricesTwo, **resultant;
 
 void manualAllocateMatricy()
@@ -75,17 +75,16 @@ int main()
     manualAllocateMatricy();
     setMatrix(matricesOne, 2);
     setMatrix(matricesTwo, 2);
-    for (int i = 0; i < SIZE; i++)
-    {
-        for (int j = 0; j < SIZE; j++)
-        {
-            for (int k = 0; k < SIZE; k++)
-            {
-                resultant[i][j] += 0;
-            }
-        }
-    }
-
+    // for (int i = 0; i < SIZE; i++)
+    // {
+    //     for (int j = 0; j < SIZE; j++)
+    //     {
+    //         for (int k = 0; k < SIZE; k++)
+    //         {
+    //             resultant[i][j] += 0;
+    //         }
+    //     }
+    // }
     auto start = high_resolution_clock::now();
     MultiplyMatrix(matricesOne, matricesTwo, resultant);
     auto stop = high_resolution_clock::now();
