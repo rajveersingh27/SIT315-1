@@ -62,14 +62,11 @@ int main()
 {
     int arr[SIZE];
     initializeArray(arr);
-    //printArray(arr);
     auto start = high_resolution_clock::now();
     quickSort(arr, 0, SIZE - 1);
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
-    //printArray(arr);
     printf("Time in milliseconds %lld\n", duration.count());
-    // printArray(arr);
     return 0;
 }
 
