@@ -18,7 +18,8 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}**",
-                    "${workspaceFolder}/M3.T1P**"
+                    "${workspaceFolder}/M3.T1P**",
+                    "${workspaceFolder}/M3.T2C**"
                 ],
                 "limitSymbolsToIncludedHeaders": true
             }
